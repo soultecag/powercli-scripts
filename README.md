@@ -1,8 +1,10 @@
 # soulTec PowerCLI Collection
 
+This repository contains various PowerCLI Scripts and Snippets.
+
 ## Authors
 
 - yannick.gerber[at]soultec.ch
 
-## Stats
-![visitors](https://visitor-badge.laobi.icu/badge?page_id=madushadhanushka.madushadhanushka)
+## License
+MIT
