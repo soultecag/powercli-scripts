@@ -1,6 +1,6 @@
 <#
 .SYNOPSIS
-    List VMs with dvPort ID prefix c-xy.
+    Fix VMs with dvPort ID prefix c-xy.
 .DESCRIPTION
    This scripts generated a CSV File with VM containing dvPort IDs with prefix c-
     https://knowledge.broadcom.com/external/article/318950/vnetwork-distributed-switch-contains-dvp.html
