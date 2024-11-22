@@ -37,7 +37,7 @@ Write-Host "VMs with portID 'c-':"
 $problematicVMs | ForEach-Object { Write-Host $_.Name }
 
 # Ask for confirmation to fix the issues
-$confirmation = Read-Host "Do you want to fix those issues for the following VMs? (yes/no)"
+$confirmation = Read-Host "Do you want to fix those issues for the following VMs - resulting in 5sec Network Connectivity loss? (yes/no)"
 
 if ($confirmation -eq "yes") {
     foreach ($vm in $problematicVMs) {
