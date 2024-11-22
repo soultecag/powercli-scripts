@@ -1,10 +1,17 @@
 <#
 .SYNOPSIS
-    Fix VMs with dvPort ID prefix c-xy.
+    Interactive Script to Fix VMs with dvPort ID prefix c-xy.
 .DESCRIPTION
-   This scripts generated a CSV File with VM containing dvPort IDs with prefix c-
-    https://knowledge.broadcom.com/external/article/318950/vnetwork-distributed-switch-contains-dvp.html
-    This script then automatically disconnected the vNIC and reconnect its.
+    In certain scenarios (Cisco ACI and VMM) it can happend that the Ports tan f a vDS Show Port IDs with the prefix "-c" (eg c-245)
+    vCenter Server creates a conflict port if multiple virtual machine's point to the same port. 
+    It does not automatically reconfigure the virtual machine to connect to a regular port if the conflict remains and the virtual machine stays connected to the conflict port.
+    See: https://knowledge.broadcom.com/external/article/318950/vnetwork-distributed-switch-contains-dvp.html
+    
+    This script then detects VMs with "c-" PortID and does the following:
+    - list you all VMs
+    - will ask, if it should fix the Issue -> disconnects vNIC, waits 5sec, and reconnects the adapter
+    - Option to Ping the VMs afterwards (based on the IPs it reads out from VMware Tools)
+    
 .OUTPUTS
     Only console output
 .NOTES
