@@ -10,8 +10,7 @@
 .NOTES
     Author        Matthias Grasmück, matthias.grasmueck@soultec.ch
     
-    Change Log    V1.00, 07/11/2020 - Initial version
-
+    Change Log    V1.00, 15.04.2025 - Initial version
 #>
 
 # Load the PowerCLI SnapIn and set the configuration
