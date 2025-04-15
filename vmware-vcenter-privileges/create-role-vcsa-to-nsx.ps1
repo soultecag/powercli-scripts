@@ -11,11 +11,14 @@
     Author        Matthias Grasmück, matthias.grasmueck@soultec.ch
     
     Change Log    V1.00, 15.04.2025 - Initial version
+
 #>
 
-# Load the PowerCLI SnapIn and set the configuration
-Add-PSSnapin VMware.VimAutomation.Core -ea "SilentlyContinue"
-Set-PowerCLIConfiguration -InvalidCertificateAction Ignore -Confirm:$false | Out-Null
+# Load all PowerCLI Modules
+Get-Module -ListAvailable "VMware*" | Import-Module -ErrorAction SilentlyContinue
+
+# Set the PowerCLI configuration
+Set-PowerCLIConfiguration -Scope User -ParticipateInCEIP $false -InvalidCertificateAction Ignore -Confirm:$false | Out-Null
 
 # Get the vCenter Server address, username and password as PSCredential
 $vCenterServer = Read-Host "Enter vCenter Server host name (DNS with FQDN or IP address)"
