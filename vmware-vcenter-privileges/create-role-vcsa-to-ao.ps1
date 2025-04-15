@@ -14,7 +14,7 @@
 #>
 
 # Load all PowerCLI Modules
-Get-Module -ListAvailable "VMware*" | Import-Module -ErrorAction SilentlyContinue
+Get-Module -ListAvailable "VMware.VimAutomation.Core" | Import-Module -ErrorAction SilentlyContinue
 
 # Set the PowerCLI configuration
 Set-PowerCLIConfiguration -Scope User -ParticipateInCEIP $false -InvalidCertificateAction Ignore -Confirm:$false | Out-Null
