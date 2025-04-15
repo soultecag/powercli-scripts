@@ -11,7 +11,6 @@
     Author        Matthias Grasmück, matthias.grasmueck@soultec.ch
     
     Change Log    V1.00, 15.04.2025 - Initial version
-
 #>
 
 # Load all PowerCLI Modules
