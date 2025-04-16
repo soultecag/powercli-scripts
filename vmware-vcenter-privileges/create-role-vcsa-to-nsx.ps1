@@ -8,7 +8,7 @@
 .OUTPUTS
     Results are printed to the console.
 .NOTES
-    Author        Matthias Grasmück, matthias.grasmueck@soultec.ch
+    Author        Matthias Grasmück, matthias.grasmueck[at]soultec.ch
     
     Change Log    V1.00, 22.01.2024 - Initial version
     Change Log    V1.10, 11.04.2025 - Updated version
