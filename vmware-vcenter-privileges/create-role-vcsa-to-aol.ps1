@@ -33,6 +33,11 @@ Write-Host "Connected to your vCenter server $vCenterServer" -ForegroundColor Gr
 
 
 $ViPrivileges_VcsaToAol = @(
+    'System.Anonymous',
+    'System.Read',
+    'System.View',
+    'Host.Config.Network',
+    'Host.Config.Settings',
     'Host.Config.AdvancedConfig',
     'Host.Config.NetService'
 )

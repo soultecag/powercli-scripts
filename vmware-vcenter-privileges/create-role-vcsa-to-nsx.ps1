@@ -33,6 +33,9 @@ Write-Host "Connected to your vCenter server $vCenterServer" -ForegroundColor Gr
 
 
 $ViPrivileges_VcsaToNsx = @(
+    'System.Anonymous',
+    'System.Read',
+    'System.View',
     'Authorization.ReassignRolePermissions',
     'Authorization.ModifyPermissions',
     'Authorization.ModifyRoles',

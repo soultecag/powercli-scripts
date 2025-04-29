@@ -33,6 +33,9 @@ Write-Host "Connected to your vCenter server $vCenterServer" -ForegroundColor Gr
 
 
 $ViPrivileges_VcsaToAon = @(
+    'System.Anonymous',
+    'System.Read',
+    'System.View',
     'Global.Settings',
     'DVSwitch.Modify',
     'DVSwitch.PortConfig',

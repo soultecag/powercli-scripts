@@ -33,6 +33,9 @@ Write-Host "Connected to your vCenter server $vCenterServer" -ForegroundColor Gr
 
 
 $ViPrivileges_VcsaToAo = @(
+    'System.Anonymous',
+    'System.Read',
+    'System.View',
     'StorageProfile.Apply',
     'StorageProfile.Update',
     'StorageProfile.View',
