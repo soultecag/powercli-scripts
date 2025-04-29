@@ -49,7 +49,7 @@ $ViPrivileges_VcsaToAviGlobal = @(
     'VirtualMachine.Config.AdvancedConfig'
 )
 
-$New_ViRole_VcsaToAviGlobal_Name = Read-Host "What's the name of you new role?"
+$New_ViRole_VcsaToAviGlobal_Name = Read-Host "What's the name of you new Avi Global role?"
 
 $New_ViRole_VcsaToAviGlobal = New-VIRole -Name $New_ViRole_VcsaToAviGlobal_Name -Privilege (Get-VIPrivilege -Id $ViPrivileges_VcsaToAviGlobal)
 Write-Host "Created vCenter role $New_ViRole_VcsaToAviGlobal" -ForegroundColor Green
@@ -103,7 +103,7 @@ $ViPrivileges_VcsaToAviFolder = @(
     'VirtualMachine.Provisioning.MarkAsVM'
 )
 
-$New_ViRole_VcsaToAviFolder_Name = Read-Host "What's the name of you new role?"
+$New_ViRole_VcsaToAviFolder_Name = Read-Host "What's the name of you new Avi Folder role?"
 
 $New_ViRole_VcsaToAviFolder = New-VIRole -Name $New_ViRole_VcsaToAviFolder_Name -Privilege (Get-VIPrivilege -Id $ViPrivileges_VcsaToAviFolder)
 Write-Host "Created vCenter role $New_ViRole_VcsaToAviFolder" -ForegroundColor Green
