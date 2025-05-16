@@ -1,36 +1,20 @@
 ﻿<#
 .SYNOPSIS
-    Script for vSphere Migration Assement
+    Script to change ESXi Root Password
 .DESCRIPTION
-    The scripts looks for the following:
-
-    VMName              
-    PowerState          
-    HardwareVersion
-    CPUCompatibility   
-    HWStatus            
-    CPUCount            
-    MemoryGB            
-    RDMDisks            
-    IndependentDisks    
-    ConnectedMedia      
-    Snapshots           
-    IsLargeVM           
-
-    Results are printed to the console and to a CSV File.
+    If you do not have vSphere configuration profiles configured ;)
 .NOTES
 
-    Author        Yannick Gerber, yannick.gerber@soultec.ch
+    Author        Yannick Gerber, yannick.gerber at soultec.ch
     
     Change Log    V1.00, 11/03/2025 - Initial version
    
 #>
 
 # Load the PowerCLI SnapIn and set the configuration
-#Add-PSSnapin VMware.VimAutomation.Core -ea "SilentlyContinue"
 #Set-PowerCLIConfiguration -InvalidCertificateAction Ignore -Confirm:$false | Out-Null
 # Simple PowerCLI script to change root password on all ESXi hosts in vCenter
-# Requirements: VMware PowerCLI module installed
+
 
 # Connect to vCenter
 $vCenterServer = Read-Host "Enter vCenter Server FQDN/IP"
