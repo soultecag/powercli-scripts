@@ -29,8 +29,8 @@
     Results are printed to the console.
 .NOTES
   
-    Author        Yannick Gerber, yannick.gerber@soultec.ch
-    Change Log    V1.00, 26.04.2025 - Initial version
+    Author        Yannick Gerber, yannick.gerber at soultec.ch
+    Change Log    V1.00, 26.02.2025 - Initial version
 
 #>
 
