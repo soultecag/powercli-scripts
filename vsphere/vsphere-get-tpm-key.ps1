@@ -1,3 +1,15 @@
+<#
+.SYNOPSIS
+    Retrieve TPM Recovery Keys for ESXi via vCenter
+
+.DESCRIPTION
+    Recovery Keys are printed to a textfile.
+
+.NOTES
+    Author        Yannick Gerber, yannick.gerber at soultec.ch
+    Change Log    V1.00, 11/01/2025 - Initial version
+#>
+
 $vCenterServer = Read-Host "Enter vCenter Server host name (DNS with FQDN or IP address)"
 $vCenterUser = Read-Host "Enter your user name (DOMAIN\User or user@domain.com)"
 $vCenterUserPassword = Read-Host "Enter your password (this will be converted to a secure string)" -AsSecureString:$true
