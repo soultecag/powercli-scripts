@@ -35,7 +35,7 @@
 #>
 
 # CONFIGURATION - Edit these values as needed
-$CsvPath = "D:\soulTec\powercli\sl1-host-backup-vmkernel.csv"  # Path to your CSV file
+$CsvPath = "D:\soulTec\powercli\vmkernel.csv"  # Path to your CSV file
 $DefaultNetworkStack = "defaultTcpipStack" 
 
 # VMkernel service configuration - Set to $true to enable
